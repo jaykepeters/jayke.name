@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Josefin+Sans&display=swap');
 html {
 	height: 100%;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 canvas {
-	display: block;
+	display: block; 
 	vertical-align: bottom;
 }
 
@@ -19,6 +19,46 @@ canvas {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+
+
+#navbar  {
+	font-family: 'Audiowide', cursive;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	border: 1px solid #555;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	border-radius: 10px;
+}
+
+#navbar li {
+	border-bottom: 1px solid #555;
+}
+
+#navbar li:last-child {
+	border-bottom: none;
+}
+
+#navbar li a {
+	display: block;
+	color: white;
+	letter-spacing: 0.1em;
+	padding: 8px 16px;
+	text-decoration: none;
+  }
+  
+#navbar li a:hover {
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+	background-blend-mode: multiply, multiply;
+}
+
+#navbar .active {
+	background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
 #name {
@@ -31,15 +71,24 @@ canvas {
 	transform: translate(-50%, -50%);
 	background-color: rgba(0, 0, 0, 0.71);
 	border-radius: 25px;
-	padding: 17px;
+	padding: 17px 0px 17px 17px;
 }
 
 #name #letters {
 	font-family: 'Audiowide', cursive;
 	margin-top: 0;
 	margin-bottom: 0;
-	text-shadow: 2px 2px 4px black;
+	text-shadow: 1px 1px 4px gray;
 	font-size: 5vw;
 	color: blue;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.75em;
+}
+
+.obfuscated {
+	color: transparent;
+	text-shadow: 0 0 100px rgba(255,255,255,0.5);
+}
+
+#part2 {
+	display: none;
 }
