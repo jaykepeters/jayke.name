@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Audiowide|Josefin+Sans&display=swap');
 html {
-	height: 100%;
+	/* Fixed the gradient issue */
+	min-height: 100%;
+  	position:relative;
 }
 
 body {
+	/* Fixed the gradient issue */
+	height: 100%;
+	width: 100%;
+	
 	background-image: linear-gradient(to bottom, #434343 0%, black 100%);
 	font-family: 'Josefin Sans', sans-serif;
 	color: white;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 canvas {
@@ -24,6 +30,7 @@ canvas {
 
 #navbar  {
 	font-family: 'Audiowide', cursive;
+	margin-bottom: 10px;
 }
 
 #navbar ul {
@@ -50,7 +57,7 @@ canvas {
 	letter-spacing: 0.1em;
 	padding: 8px 16px;
 	text-decoration: none;
-  }
+}
   
 #navbar li a:hover {
 	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
@@ -82,6 +89,19 @@ canvas {
 	font-size: 5vw;
 	color: blue;
 	letter-spacing: 0.75em;
+}
+
+#aboutmyname {
+	margin: 0 auto;
+	padding: 10px;
+	width: 75%;
+	border: 5px solid black;
+	border-radius: 17px;
+	background-color: rgba(0,0,0,0.25);
+}
+
+.title {
+	text-align: center;
 }
 
 .obfuscated {

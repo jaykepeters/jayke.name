@@ -17,14 +17,14 @@
         </div>
         <div id="aboutmyname">
             <div id="part1">
-                <h1>About My Name</h1>
+                <h1 class="title">About My Name</h1>
                 <p>Hi, my name is Jayke. You are most likely wondering why my name is spelled the way it is. I'll let you in on a secret, there's a name within my name. Can you guess what it is?</p>
                 <h1 id="jay" class="obfuscated">Jay</h1>
-                <button onclick="revealObfuscatedText(this, 'jay');">Reveal</button>
+                <button id="trigger" onclick="revealObfuscatedText(this, 'jay');" disabled>Reveal</button><span>&nbsp; <span id="timer" style="color: red;">Please Wait:</span> <strong>11 seconds</strong> </span>
+                <script>waitForUser();</script>
             </div>
             <div id="part2">
                 <p>Yes, it's that simple. The first three letters of my name spell out "Jay." Who is named Jay? It's actually my father's middle name. So now you know. Don't ask me about my name again!</p>
-                <h1>Fact:</h1>
                 <div style="color: #000;">
                     <br>
                     <table width="350" bgcolor="#FFFFFF" cellpadding="1" border="0" cellspacing="0" style="background-color: white; text-align: center;">

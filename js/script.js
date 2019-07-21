@@ -1,3 +1,13 @@
+// Force the user to read part 1 first
+function waitForUser() {
+    setTimeout(
+        function() { 
+            trigger.disabled = false;
+            timer.style.display = "none";
+        }
+    , 11000);
+}
+
 function revealObfuscatedText(trigger, id) {
     targetElement = document.getElementById(id);
 
