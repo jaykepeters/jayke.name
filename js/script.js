@@ -1,13 +1,13 @@
-                    function revealObfuscatedText(trigger, id) {
-                        targetElement = document.getElementById(id);
+function revealObfuscatedText(trigger, id) {
+    targetElement = document.getElementById(id);
 
-                        // Unobfuscate the text
-                        targetElement.style.textShadow = "none";
-                        targetElement.style.color = "white";
+    // Unobfuscate the text
+    targetElement.style.textShadow = "none";
+    targetElement.style.color = "white";
 
-                        // Disable the button
-                        trigger.disabled = true;
+    // Disable the button
+    trigger.disabled = true;
 
-                        // Show Part 2
-                        part2.style.display = "block";
-                    }
+    // Show Part 2
+    part2.style.display = "block";
+}
