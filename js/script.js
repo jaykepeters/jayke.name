@@ -5,7 +5,7 @@ function waitForUser() {
             trigger.disabled = false;
             timer.style.display = "none";
         }
-    , 11000);
+    , 1000);
 }
 
 function revealObfuscatedText(trigger, id) {
@@ -13,7 +13,7 @@ function revealObfuscatedText(trigger, id) {
 
     // Unobfuscate the text
     targetElement.style.textShadow = "none";
-    targetElement.style.color = "white";
+    targetElement.style.color = "red";
 
     // Disable the button
     trigger.disabled = true;

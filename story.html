@@ -19,9 +19,9 @@
             <div id="part1">
                 <h1 class="title">About My Name</h1>
                 <p>Hi, my name is Jayke. You are most likely wondering why my name is spelled the way it is. I'll let you in on a secret, there's a name within my name. Can you guess what it is?</p>
+                <button id="trigger" onclick="revealObfuscatedText(this, 'jay');" enabled>Reveal</button>
                 <h1 id="jay" class="obfuscated">Jay</h1>
-                <button id="trigger" onclick="revealObfuscatedText(this, 'jay');" disabled>Reveal</button><span>&nbsp; <span id="timer" style="color: red;">Please Wait:</span> <strong>11 seconds</strong> </span>
-                <script>waitForUser();</script>
+                <!-- DISABLED>script>waitForUser();</script -->
             </div>
             <div id="part2">
                 <p>Yes, it's that simple. The first three letters of my name spell out "Jay." Who is named Jay? It's actually my father's middle name. So now you know. Don't ask me about my name again!</p>
@@ -48,6 +48,16 @@
                     <br>
                 </div>
             </div>
+        </div>
+        <div id="info">
+            <h1 class="title">Is your name Jayke?</h1>
+            <h3>You can get a web site just like this!</h3>
+            <h3>Benefits include:</h3>
+            <ul>
+                <li>It's 100% FREE</li>
+                <li>Localized</li>
+                <li>Surname Subdomain, ex: peters.jayke.name</li>
+            </ul>
         </div>
     </body>
 </html>
